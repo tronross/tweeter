@@ -1,0 +1,11 @@
+/* Stylesheet for header */
+
+header {
+  display: flex;
+  padding-top: 120px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/concrete-wall-3.png");
+}
