@@ -1,4 +1,5 @@
 /* Stylesheet for navbar and its elements */
+
 nav {
   display: flex;
   position: fixed;
@@ -10,7 +11,7 @@ nav {
   padding-right: 1.5em;
   padding-top: 55px;
   justify-content: space-between;
-  
+  flex-direction: row;
 }
 
 #logo {
