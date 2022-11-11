@@ -21,11 +21,21 @@ body {
   font-size: 24px;
 }
 
-nav {
-  font-family: 'Bungee', cursive;
-  font-size: 18px;
-}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ nav {
+   background-color: #4056A1;
+   height: 120px;
+   color: #FFFFFF;
+   padding-left: 1.5em;
+   padding-right: 1.5em;
+   padding-top: 60px;
+ }
+
+#logo {
+  font-family: 'Bungee', cursive;
+  font-size: 36px;
+}
