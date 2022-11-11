@@ -26,27 +26,3 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- nav {
-   display: flex;
-   background-color: #4056A1;
-   height: 120px;
-   color: #FFFFFF;
-   padding-left: 1.5em;
-   padding-right: 1.5em;
-   padding-top: 55px;
-   justify-content: space-between;
-   
- }
-
-#logo {
-  font-family: 'Bungee', cursive;
-  font-size: 36px;
-}
-
-#angle-double-down {
-  color: red;
-}
-
-#new_tweet {
-  text-align: center;
-}
