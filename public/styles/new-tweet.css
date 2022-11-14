@@ -33,6 +33,7 @@
   border: none;
   border-bottom: 3px solid black;
   font-size: 24px;
+  font-weight: 600;
 }
 
 #submit-counter {
@@ -42,6 +43,7 @@
   font-family: 'Bungee', cursive;
   font-size: 18px;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 
