@@ -2,8 +2,61 @@ article.tweet {
   display: flex;
   flex-direction: column;
   border: 3px solid black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+article.tweet:hover {
+  box-shadow: 10px 5px 5px gray;
 }
 
 article.tweet header {
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.tweet-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tweet-profile span {
+  padding-left: 15px;
+}
+
+article.tweet .handle {
+  color: lightgray;
+  font-weight: 600;
+}
+
+article.tweet p {
+  padding: 15px;
+  padding-left: 25px;
+  font-weight: 600;
+}
+
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  padding: 15px;
+  border-top: 3px solid black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+article.tweet i {
+  font-size: larger;
+  padding-inline: 5px;
+}
+
+article.tweet i:hover {
+  color: goldenrod;
 }
