@@ -1,6 +1,4 @@
-/* .container > .new-tweet {
-  width: inherit;
-} */
+/* Stylesheet for tweet composition container and elements */
 
 .new-tweet {
   display:flex;
@@ -17,7 +15,6 @@
   font-size: 18px;
   background-color: #4056A1;
   color: #FFFFFF;
-
 }
 
 .new-tweet form {
@@ -32,9 +29,7 @@
   flex-direction: row;
   background-color: #f4f1ec;
   min-width: 90%;
-}
-
-#tweet-text {
+  outline: none;
   border: none;
   border-bottom: 2px solid black;
   font-size: 24px;
