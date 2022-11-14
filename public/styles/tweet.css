@@ -1,0 +1,9 @@
+article.tweet {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+}
+
+article.tweet header {
+  flex-direction: row;
+}
