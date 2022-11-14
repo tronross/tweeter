@@ -1,6 +1,6 @@
 /* Stylesheet for full header */
 
-header {
+nav header {
   display: flex;
   padding-top: 120px;
   width: 100%;
