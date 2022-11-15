@@ -1,10 +1,10 @@
 article.tweet {
   display: flex;
   flex-direction: column;
+  color: black;
   border: 3px solid black;
   margin-top: 40px;
   margin-bottom: 40px;
-  color: black;
 }
 
 article.tweet:hover {
@@ -19,13 +19,13 @@ article.tweet header {
   padding: 15px;
 }
 
-.tweet-profile {
+.tweeter-profile {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.tweet-profile span {
+.tweeter-profile span {
   padding-left: 15px;
 }
 
