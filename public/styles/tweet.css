@@ -1,28 +1,29 @@
-/* ------------------- */
-/* Stylesheet for tweet container (feed) */
-/* ------------------- */
+/*/////////////////////////////////////////*/
+/*/ Stylesheet for tweet container (feed) */
+/*/////////////////////////////////////////*/
 
+/*/////////////////////////////////////////*/
+/*/ Tweet container */
+/*/////////////////////////////////////////*/
 
-/* ---------------- */
-/* Tweet container */
-/* ---------------- */
 article.tweet {
   display: flex;
   flex-direction: column;
   color: black;
+  font-weight: 600;
   border: 3px solid black;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-article.tweet:hover {
-  box-shadow: 10px 5px 5px gray;
-}
+  article.tweet:hover { box-shadow: 10px 5px 5px gray; }
 
 
-/* ---------------- */
-/* Profile pic, name and handle (@handle) */
-/* ---------------- */
+
+/*/////////////////////////////////////////*/
+/*/ Profile pic, name and handle (@handle) */
+/*/////////////////////////////////////////*/
+
 article.tweet header {
   display: flex;
   flex-direction: row;
@@ -31,37 +32,37 @@ article.tweet header {
   padding: 15px;
 }
 
-/* Profile pic and name */
-.tweeter-profile {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  /* Profile pic and name */
+  .tweeter-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-.tweeter-profile span {
-  padding-left: 15px;
-}
+  .tweeter-profile span { padding-left: 15px; }
 
-/* Tweeter handle (@handle) */
-article.tweet .handle {
-  color: lightgray;
-  font-weight: 600;
-}
+    span.tweeter-name { font-weight: 400; }
+
+  /* Tweeter handle (@handle) */
+  article.tweet .handle { color: lightgray; }
 
 
-/* ---------------- */
-/* Tweet text body */
-/* ---------------- */
+
+/*/////////////////////////////////////////*/
+/*/ Tweet text body */
+/*/////////////////////////////////////////*/
+
 article.tweet p {
   padding: 15px;
   padding-left: 25px;
-  font-weight: 600;
 }
 
 
-/* ---------------- */
-/* Tweet post date, and icons */
-/* ---------------- */
+
+/*/////////////////////////////////////////*/
+/*/ Tweet post date, and icons */
+/*/////////////////////////////////////////*/
+
 article.tweet footer {
   display: flex;
   flex-direction: row;
@@ -71,14 +72,11 @@ article.tweet footer {
   padding: 15px;
   border-top: 3px solid black;
   font-size: 16px;
-  font-weight: 600;
 }
 
-article.tweet i {
-  font-size: larger;
-  padding-inline: 5px;
-}
+  article.tweet i {
+    font-size: larger;
+    padding-inline: 5px;
+  }
 
-article.tweet i:hover {
-  color: goldenrod;
-}
+    article.tweet i:hover { color: goldenrod; }
