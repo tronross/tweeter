@@ -12,7 +12,6 @@ const renderTweets = function(tweets) {
 }
 
 const createTweetElement = function(tweet) {
-  console.log(tweet);
   let $tweet = `
                   <article class="tweet">
                     <header>
@@ -54,5 +53,5 @@ const $tweet = createTweetElement(tweetData);
 
 // Test / driver code (temporary)
 console.log($tweet); // to see what it looks like
-$('main.container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
