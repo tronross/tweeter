@@ -12,7 +12,7 @@ const renderTweets = function(tweets) {
 }
 
 const createTweetElement = function(tweet) {
-  let $tweet = $(`<article class="tweet">
+  let $tweet = `<article class="tweet">
                     <header>
                       <section class="tweeter-profile">
                         <img class="avatar" src=${[tweet].user.avatars} alt="avatar">
@@ -29,7 +29,7 @@ const createTweetElement = function(tweet) {
                           <i class="fa-solid fa-heart"></i>
                         </span>
                     </footer>
-                  </article>`);
+                  </article>`;
   
 return $tweet;
 };
@@ -48,8 +48,8 @@ const tweetData = {
 }
 
 const $tweet = createTweetElement(tweetData);
-// $(document).ready(createTweetElement(tweetData));
+
 // Test / driver code (temporary)
 console.log($tweet); // to see what it looks like
-$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+$('.container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
