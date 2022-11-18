@@ -1,5 +1,5 @@
 /*/////////////////////////////////////////*/
-/*/ Stylesheet for tweet container (feed) */
+/*/ Tweet Container Stylesheet(feed) */
 /*/////////////////////////////////////////*/
 
 /*/////////////////////////////////////////*/
@@ -53,14 +53,14 @@ article.tweet header {
 /*/////////////////////////////////////////*/
 
 article.tweet p {
-  padding: 15px;
+  padding: 15px; 
   padding-left: 25px;
 }
 
 
 
 /*/////////////////////////////////////////*/
-/*/ Tweet post date, and icons */
+/*/ Tweet post age, and icons */
 /*/////////////////////////////////////////*/
 
 article.tweet footer {
