@@ -21,7 +21,7 @@ const createTweetElement = function(tweet) {
                       </section>
                       <span class="handle">${tweet.user.handle}</span>
                     </header>
-                    <p class="tweet-text">${tweet.content.text}</p>
+                    <p class="tweet-body">${tweet.content.text}</p>
                     <footer>
                       <span class="created-at">${tweet.created_at}</span>
                         <span>
