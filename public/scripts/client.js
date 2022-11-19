@@ -1,5 +1,5 @@
 ///////////////////////////////////////
-// Tweet Creation and Rendering 
+// Tweet Creation and Rendering
 ///////////////////////////////////////
 
 $(document).ready(() => {
@@ -32,7 +32,7 @@ $(document).ready(() => {
                       </header>
                       <p class="tweet-body">${tweet.content.text}</p>
                       <footer>
-                        <span class="created-at">${tweet.created_at}</span>
+                        <span class="created-at">${timeago.format(tweet.created_at)}</span>
                           <span>
                             <i class="fa-solid fa-flag"></i>
                             <i class="fa-solid fa-retweet"></i>
@@ -45,12 +45,13 @@ $(document).ready(() => {
     return $tweet;
   };
 
+  // GET and render tweets from in-memory database
   const loadTweets = function() {
     $.get('http://localhost:8080/tweets', ( tweets ) => {
       renderTweets(tweets);
     });
-  }
-  
+  };
+
   loadTweets();
 
 });
