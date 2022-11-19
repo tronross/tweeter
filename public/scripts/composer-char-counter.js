@@ -1,8 +1,16 @@
+// Count and display remaining characters while composing tweet
 $(document).ready(function(event) {
   $( '#tweet-text' ).on('input', function(event) {
     const tweetText = $( this ).val();
-    const count = 140 - tweetText.length;
+    let count = 140 - tweetText.length;
     const counterNode = $( this ).parent().children('#submit-counter').children('.counter');
+
+    // reset counter on tweet submit
+    $( '#submit-tweet' ).submit(function() {
+      event.preventDefault();
+      count = 140;
+      $( counterNode ).text(count);
+    });
 
     if (count < 0) {
       $( counterNode ).css({ color: 'red' });
