@@ -1,9 +1,21 @@
 ///////////////////////////////////////
-// Tweet Creation and Rendering (feed)
+// Tweet Creation and Rendering 
 ///////////////////////////////////////
 
 $(document).ready(() => {
 
+  // Submit new tweet
+  $( "#submit-tweet" ).submit(function( event ) {
+    event.preventDefault();
+    console.log(event);
+    const $newTweet = $( this ).serialize();
+    console.log($newTweet);
+  });
+
+
+
+
+  // Render Feed
   const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
@@ -11,6 +23,7 @@ $(document).ready(() => {
     }
   };
 
+  // Render tweet HTML
   const createTweetElement = function(tweet) {
     let $tweet = `
                     <article class="tweet">
@@ -37,7 +50,15 @@ $(document).ready(() => {
   };
   renderTweets(data);
 
+ 
+
+
+
 });
+
+
+
+
 
 // Test / driver code (temporary). Eventually will get this from the server.
 const data = [
