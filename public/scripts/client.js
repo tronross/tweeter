@@ -5,15 +5,11 @@
 $(document).ready(() => {
 
   // Submit new tweet
-  $( "#submit-tweet" ).submit(function( event ) {
+  $( '#submit-tweet' ).submit(function(event) {
     event.preventDefault();
-    console.log(event);
     const $newTweet = $( this ).serialize();
-    console.log($newTweet);
+    $.post('/tweets/', $newTweet);
   });
-
-
-
 
   // Render Feed
   const renderTweets = function(tweets) {
@@ -49,10 +45,6 @@ $(document).ready(() => {
     return $tweet;
   };
   renderTweets(data);
-
- 
-
-
 
 });
 
