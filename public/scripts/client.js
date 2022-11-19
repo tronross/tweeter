@@ -2,6 +2,13 @@
 // Tweet Creation and Rendering
 ///////////////////////////////////////
 
+// Helper Function: escape insecure text
+const escapeText = function(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 $(document).ready(() => {
 
   // Submit new tweet
@@ -42,7 +49,9 @@ $(document).ready(() => {
 
   // Render tweet HTML
   const createTweetElement = function(tweet) {
-    let $tweet = `
+    const escapedTweet = escapeText(tweet.content.text);
+
+    const $tweet = `
                     <article class="tweet">
                       <header>
                         <section class="tweeter-profile">
@@ -51,7 +60,7 @@ $(document).ready(() => {
                         </section>
                         <span class="handle">${tweet.user.handle}</span>
                       </header>
-                      <p class="tweet-body">${tweet.content.text}</p>
+                      <p class="tweet-body">${escapedTweet}</p>
                       <footer>
                         <span class="created-at">${timeago.format(tweet.created_at)}</span>
                           <span>
