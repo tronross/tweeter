@@ -14,9 +14,23 @@ $(document).ready(() => {
       alert('Your tweet is more than 140 characters!');
     } else {
       $.post('/tweets/', $newTweet);
-      $( '#tweets-container' ).html(loadTweets());
+      $("form").trigger("reset");
+      formatNewTweet();
     }
   });
+
+  // Format and post new tweet
+  const formatNewTweet = function() {
+    setTimeout(() => {
+      $.get('http://localhost:8080/tweets', ( tweets ) => {
+        const tweetNumber = tweets.length - 1;
+        const newTweet = tweets[tweetNumber];
+        const newTweetHtml = createTweetElement(newTweet);
+        $('#tweets-container').prepend(newTweetHtml);
+      });
+    }, 400); // Buffer for network delays
+  };
+    
 
   // Render Feed
   const renderTweets = function(tweets) {
