@@ -8,7 +8,13 @@ $(document).ready(() => {
   $( '#submit-tweet' ).submit(function(event) {
     event.preventDefault();
     const $newTweet = $( this ).serialize();
-    $.post('/tweets/', $newTweet);
+    if ($newTweet === "text=" || $newTweet === null) {
+      alert('Your tweet is empty!');
+    } else if ($newTweet.length >= 145) {
+      alert('Your tweet is more than 140 characters!');
+    } else {
+      $.post('/tweets/', $newTweet);
+    }
   });
 
   // Render Feed
