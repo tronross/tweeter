@@ -14,6 +14,7 @@ $(document).ready(() => {
       alert('Your tweet is more than 140 characters!');
     } else {
       $.post('/tweets/', $newTweet);
+      $( '#tweets-container' ).html(loadTweets());
     }
   });
 
@@ -21,7 +22,7 @@ $(document).ready(() => {
   const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     }
   };
 
