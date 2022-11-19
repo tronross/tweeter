@@ -44,49 +44,13 @@ $(document).ready(() => {
     
     return $tweet;
   };
-  renderTweets(data);
+
+  const loadTweets = function() {
+    $.get('http://localhost:8080/tweets', ( tweets ) => {
+      renderTweets(tweets);
+    });
+  }
+  
+  loadTweets();
 
 });
-
-
-
-
-
-// Test / driver code (temporary). Eventually will get this from the server.
-const data = [
-
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1668641683548
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
-    },
-    "content": {
-      "text": "Je pense , donc je suis. Amirite?"
-    },
-    "created_at": 1668728083548
-  },
-  {
-    "user": {
-      "name": "Barlon",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@smellycastle"
-    },
-    "content": {
-      "text": "Where the kibs at?"
-    },
-    "created_at": 1665728083548
-  }
-
-];
