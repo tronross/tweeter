@@ -1,5 +1,6 @@
 /* Stylesheet for tweet composition container and elements */
 
+/* container */
 .new-tweet {
   display:flex;
   flex-direction: column;
@@ -25,6 +26,7 @@
   width: 100%;
 }
 
+/* textarea */
 #tweet-text {
   flex-direction: row;
   background-color: #f4f1ec;
@@ -36,6 +38,7 @@
   font-weight: 600;
 }
 
+/* character counter */
 #submit-counter {
   display: flex;
   flex-direction: row;
@@ -44,6 +47,11 @@
   font-size: 18px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+/* to hide alert when inactive */
+.hidden {
+  display: none;
 }
 
 
