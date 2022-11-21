@@ -11,12 +11,31 @@ const escapeText = function(str) {
 
 $(document).ready(() => {
 
+  // $( '#error-dialog' ).hide();
+
   // Submit new tweet
   $( '#submit-tweet' ).submit(function(event) {
     event.preventDefault();
     const $newTweet = $( this ).serialize();
+    
     if ($newTweet === "text=" || $newTweet === null) {
-      alert('Your tweet is empty!');
+      $( '#error-dialog' ).slideDown("fast", () => {
+        $( '#error-dialog' ).removeClass( '.hidden' );
+        $( 'button').click(() => {
+          $( '#error-dialog' ).slideUp("fast", () => {
+            $( '#error-dialog' ).addClass( '.hidden' )
+        })
+        })
+
+        
+          // $( '#submit-tweet' ).submit(function(event) {
+            // event.preventDefault();
+           
+      // })
+      // alert('Your tweet is empty!');
+      })
+    
+      
     } else if ($newTweet.length >= 145) {
       alert('Your tweet is more than 140 characters!');
     } else {
