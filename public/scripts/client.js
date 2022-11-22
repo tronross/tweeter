@@ -16,8 +16,8 @@ $(document).ready(() => {
     event.preventDefault();
     const $newTweet = $( this ).serialize();
     // error-dialog handling
-    if ($newTweet === "text=" || $newTweet === null || $newTweet.length >= 145) {
-      if ($newTweet.length >= 145) {
+    if ($newTweet === "text=" || $newTweet === null || $newTweet.length >= 146) {
+      if ($newTweet.length >= 146) {
         $( '#error-dialog' ).text('Tweets over 140 characters are not allowed!');
       } else {
         $( '#error-dialog' ).text('Empty tweets are not allowed!');
