@@ -19,9 +19,9 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
-    <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -40,18 +40,29 @@
         <section id="angle-double-down"><i id="angle-double-down"class="fa-solid fa-angles-down"></i></section>
       </span>
     </nav>
-    <!-- Header -->
-    <header class="feed">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Jane Verklempt</h2>
-      </div>
+    <header class="profile">
+      <section>
+        <img src="/images/profile-hex.png"> 
+      </section>
+      <!-- <br> -->
+      <section>
+        <p><strong>Jane</strong> Verklempt</p>
+      </section>
     </header>
-    <!-- Page-specific (main) content here -->
-    <main class="container">
+      <!-- Page-specific (main) content here -->
+      <main class="container" id="primary-body">
+      <!-- Profile -->
+      <section class="profile">
+        <section>
+            <img src="/images/profile-hex.png"> 
+        </section>
+
+        <section>
+            <p><strong>Jane</strong> Verklempt</p>
+        </section>
+      </section>
+      <!-- Tweeter Feed -->
+    <section id="feed">
       <!-- New tweet composition -->
       <section class="new-tweet">
         <section id="error-dialog" class="hidden"></section> 
@@ -66,6 +77,7 @@
       </section>
       <!-- Tweet container (feed) -->
       <section id="tweets-container"></section>
+    </section>
     </main>
   </body>
 </html>
