@@ -28,6 +28,12 @@ main {
   width: 90%;
 }
 
+section#feed {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
