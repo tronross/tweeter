@@ -15,9 +15,10 @@ $(document).ready(() => {
   $( '#submit-tweet' ).submit(function(event) {
     event.preventDefault();
     const $newTweet = $( this ).serialize();
+    const $tweetLength = decodeURIComponent($newTweet).length;
     // error-dialog handling
-    if ($newTweet === "text=" || $newTweet === null || $newTweet.length >= 146) {
-      if ($newTweet.length >= 146) {
+    if ($newTweet === "text=" || $newTweet === null || $tweetLength >= 146) {
+      if ($tweetLength >= 146) {
         $( '#error-dialog' ).text('Tweets over 140 characters are not allowed!');
       } else {
         $( '#error-dialog' ).text('Empty tweets are not allowed!');
