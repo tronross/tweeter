@@ -14,6 +14,8 @@ article.tweet {
   border: 3px solid black;
   margin-top: 40px;
   margin-bottom: 40px;
+  max-width: 1200px;
+  word-wrap: break-word;
 }
 
   article.tweet:hover { box-shadow: 10px 5px 5px gray; }
