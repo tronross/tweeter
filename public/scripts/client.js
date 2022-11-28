@@ -26,14 +26,14 @@ $(document).ready(() => {
       // animation
       $( '#error-dialog' ).slideDown("fast", () => {
         $( '#error-dialog' ).removeClass( '.hidden' );
-        $( 'button').click(() => {
+        $( 'button' ).click(() => {
           $( '#error-dialog' ).slideUp("fast", () => {
             $( '#error-dialog' ).addClass( '.hidden' );
           });
         });
       });
-    // success
     } else {
+      // success: post tweet
       $.post('/tweets/', $newTweet);
       $("form").trigger("reset");
       formatNewTweet();
