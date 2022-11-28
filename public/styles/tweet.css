@@ -14,7 +14,7 @@ article.tweet {
   border: 3px solid black;
   margin-top: 40px;
   margin-bottom: 40px;
-  max-width: 1200px;
+  max-width: 1000px;
   word-wrap: break-word;
 }
 
@@ -58,6 +58,10 @@ article.tweet p {
   padding: 15px;
   padding-top: 0; 
   padding-left: 25px;
+}
+
+.new-tweet {
+  max-width: 1000px;
 }
 
 
