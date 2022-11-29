@@ -2,6 +2,7 @@
 /* Tweet Composition (Container and Elements) Stylesheet  */
 /*/////////////////////////////////////////////////////////*/
 
+
 /*/////////////////*/
 /* Container */
 /*/////////////////*/
@@ -31,6 +32,7 @@
       background-color: #4056A1;
       color: #FFFFFF;
     }
+
 
 
     /*/////////////////*/
@@ -64,6 +66,8 @@
       padding-top: 15px;
       padding-bottom: 15px;
     }
+
+
 
   /*/////////////////*/
   /* Error Dialog */
