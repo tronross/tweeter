@@ -3,7 +3,6 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
@@ -49,34 +48,34 @@
         <p><strong>Jane</strong> Verklempt</p>
       </section>
     </header>
-      <!-- Page-specific (main) content here -->
-      <main class="container" id="primary-body">
+    <!-- Page-specific (main) content here -->
+    <main class="container" id="primary-body">
       <!-- Floating Profile -->
       <section class="profile">
         <section >
-            <img src="/images/profile-hex.png"> 
+          <img src="/images/profile-hex.png"> 
         </section>
         <section>
-            <p><strong>Jane</strong> Verklempt</p>
+          <p><strong>Jane</strong> Verklempt</p>
         </section>
       </section>
       <!-- Tweeter Feed -->
-    <section id="feed">
-      <!-- New tweet composition -->
-      <section class="new-tweet">
-        <section id="error-dialog" class="hidden"></section> 
-        <form id="submit-tweet" method="POST" action="/tweets/" enctype="application/x-www-form-urlencoded">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <footer id="submit-counter">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </footer>
-        </form>
+      <section id="feed">
+        <!-- New tweet composition -->
+        <section class="new-tweet">
+          <section id="error-dialog" class="hidden"></section> 
+          <form id="submit-tweet" method="POST" action="/tweets/" enctype="application/x-www-form-urlencoded">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>
+            <footer id="submit-counter">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </footer>
+          </form>
+        </section>
+        <!-- Tweet container (feed) -->
+        <section id="tweets-container"></section>
       </section>
-      <!-- Tweet container (feed) -->
-      <section id="tweets-container"></section>
-    </section>
     </main>
   </body>
 </html>
