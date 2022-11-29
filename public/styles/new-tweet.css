@@ -1,6 +1,11 @@
-/* Stylesheet for tweet composition container and elements */
+/*/////////////////////////////////////////////////////////*/
+/* Tweet Composition (Container and Elements) Stylesheet  */
+/*/////////////////////////////////////////////////////////*/
 
-/* container */
+/*/////////////////*/
+/* Container */
+/*/////////////////*/
+
 .new-tweet {
   display:flex;
   flex-direction: column;
@@ -11,65 +16,71 @@
   flex-wrap: wrap;
 }
 
-.new-tweet button {
-  font-family: 'Bungee', cursive;
-  font-size: 18px;
-  background-color: #4056A1;
-  color: #FFFFFF;
-}
+  .new-tweet form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    width: 100%;
+  }
 
-.new-tweet form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-weight: 600;
-  width: 100%;
-}
-
-/* textarea */
-#tweet-text {
-  flex-direction: row;
-  background-color: #f4f1ec;
-  min-width: 90%;
-  outline: none;
-  border: none;
-  border-bottom: 3px solid black;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-/* textarea label */
-#submit-tweet label {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-/* character counter */
-#submit-counter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: 'Bungee', cursive;
-  font-size: 18px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-/* error dialog */
-#error-dialog {
-  color: red;
-  text-align: center;
-  width: 50%;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  border: 3px solid red;
-  border-radius: 2px;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.hidden {
-  display: none;
-}
+  
+    .new-tweet button {
+      font-family: 'Bungee', cursive;
+      font-size: 18px;
+      background-color: #4056A1;
+      color: #FFFFFF;
+    }
 
 
+    /*/////////////////*/
+    /* textarea */
+    /*/////////////////*/
+
+    #tweet-text {
+      flex-direction: row;
+      background-color: #f4f1ec;
+      min-width: 90%;
+      outline: none;
+      border: none;
+      border-bottom: 3px solid black;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    /* textarea label */
+    #submit-tweet label {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* character counter */
+    #submit-counter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: 'Bungee', cursive;
+      font-size: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+  /*/////////////////*/
+  /* Error Dialog */
+  /*/////////////////*/
+
+  #error-dialog {
+    color: red;
+    text-align: center;
+    width: 50%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 3px solid red;
+    border-radius: 2px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+    .hidden {
+      display: none;
+    }  
