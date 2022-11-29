@@ -13,6 +13,7 @@ section.profile { /* Hide Floating Profile; Display Header Profile */
 header.profile {
   display: flex;
   padding-top: 120px;
+  padding-bottom: 30px;
   width: 100%;
   flex-direction: row;
   justify-content: center;
@@ -22,13 +23,22 @@ header.profile {
   color: white;
 }
 
+section#user-avatar {
+  max-width: 150px;
+  margin-right: -40px;
+}
+
   header.profile img {
     display: flex;
     flex-direction: row;
-    width: 22%;
+    width: 50%;
     height: auto;
-  
   }
+
+
+/*////////////////////////////////////////////*/
+/* Intermediate View (tablet) */
+/*////////////////////////////////////////////*/
 
 @media only screen and (min-width:720px) {
 
@@ -37,10 +47,18 @@ header.profile {
     font-size: 32px;
   }
 
-  header.profile img {
-   
-    width: auto;
+  section#user-avatar {
+    max-width: 550px;
+    margin-right: 0px;
   }
+
+  header.profile img { 
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+  }
+
+ 
 
 }
 
