@@ -1,9 +1,9 @@
 /*/////////////////////////////////////////*/
-/*/ Tweet Container Stylesheet(feed) */
+/*/ Tweet Container (Feed) Stylesheet */
 /*/////////////////////////////////////////*/
 
 /*/////////////////////////////////////////*/
-/*/ Tweet container */
+/*/ Tweet Container */
 /*/////////////////////////////////////////*/
 
 article.tweet {
@@ -22,69 +22,69 @@ article.tweet {
 
 
 
-/*/////////////////////////////////////////*/
-/*/ Profile pic, name and handle (@handle) */
-/*/////////////////////////////////////////*/
+  /*/////////////////////////////////////////*/
+  /*/ Profile pic, name and handle (@handle) */
+  /*/////////////////////////////////////////*/
 
-article.tweet header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-  /* Profile pic and name */
-  .tweeter-profile {
+  article.tweet header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding: 15px;
   }
 
-  .tweeter-profile span { padding-left: 15px; }
+    /* Profile pic and name */
+    .tweeter-profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
 
-    span.tweeter-name { font-weight: 400; }
+    .tweeter-profile span { padding-left: 15px; }
 
-  /* Tweeter handle (@handle) */
-  article.tweet .handle { color: lightgray; }
+      span.tweeter-name { font-weight: 400; }
 
-
-
-/*/////////////////////////////////////////*/
-/*/ Tweet text body */
-/*/////////////////////////////////////////*/
-
-article.tweet p {
-  padding: 15px;
-  padding-top: 0; 
-  padding-left: 25px;
-}
-
-.new-tweet {
-  max-width: 1000px;
-}
+    /* Tweeter handle (@handle) */
+    article.tweet .handle { color: lightgray; }
 
 
 
-/*/////////////////////////////////////////*/
-/*/ Tweet post age, and icons */
-/*/////////////////////////////////////////*/
+  /*/////////////////////////////////////////*/
+  /*/ Tweet text body */
+  /*/////////////////////////////////////////*/
 
-article.tweet footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 15px;
-  margin-top: 0;
-  padding: 10px;
-  border-top: 3px solid black;
-  font-size: 16px;
-}
-
-  article.tweet i {
-    font-size: larger;
-    padding-inline: 5px;
+  article.tweet p {
+    padding: 15px;
+    padding-top: 0; 
+    padding-left: 25px;
   }
 
-    article.tweet i:hover { color: goldenrod; }
+  .new-tweet {
+    max-width: 1000px;
+  }
+
+
+
+  /*/////////////////////////////////////////*/
+  /*/ Tweet post age, and icons */
+  /*/////////////////////////////////////////*/
+
+  article.tweet footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    margin-top: 0;
+    padding: 10px;
+    border-top: 3px solid black;
+    font-size: 16px;
+  }
+
+    article.tweet i {
+      font-size: larger;
+      padding-inline: 5px;
+    }
+
+      article.tweet i:hover { color: goldenrod; }
