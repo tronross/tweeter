@@ -1,17 +1,14 @@
-/*
- * Do not modify these two selectors, please
- */
+/*////////////////////////////////*/
+/*  Global Layout */
+/*////////////////////////////////*/
  
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout
- */
 
 body {
   display: flex;
@@ -31,4 +28,19 @@ section#feed {
   display: flex;
   flex-direction: column;
   flex-grow: 2;
+  font-size: smaller;
 }
+
+
+
+/*////////////////////////////////*/
+/* Intermediate (and larger) View */
+/*////////////////////////////////*/
+
+@media only screen and (min-width: 768px) {
+
+  section#feed {
+    font-size: inherit;
+  }
+  
+    }
