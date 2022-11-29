@@ -40,28 +40,25 @@ section#user-avatar {
 /* Intermediate View (tablet) */
 /*////////////////////////////////////////////*/
 
-@media only screen and (min-width:720px) {
+@media only screen and (min-width:768px) {
 
   header.profile {
     flex-direction: column;
     font-size: 32px;
   }
 
-  section#user-avatar {
-    max-width: 550px;
-    margin-right: 0px;
-  }
+    section#user-avatar {
+      max-width: 550px;
+      margin-right: 0px;
+    }
 
-  header.profile img { 
-    flex-direction: row;
-    width: auto;
-    align-items: center;
-  }
-
- 
+      header.profile img { 
+        flex-direction: row;
+        width: auto;
+        align-items: center;
+      }
 
 }
-
 
 
 /*////////////////////////////////////////////*/
