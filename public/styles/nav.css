@@ -1,4 +1,6 @@
-/* Stylesheet for navbar and its elements */
+/*////////////////////////////////////////////*/
+/* Navbar (and Elements) Stylesheet */
+/*////////////////////////////////////////////*/
 
 nav {
   display: flex;
@@ -6,20 +8,37 @@ nav {
   width: 100%;
   background-color: #4056A1;
   height: 120px;
+  font-size: smaller;
   color: #FFFFFF;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-top: 55px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 40px;
   justify-content: space-between;
   flex-direction: row;
 }
 
-#logo {
- font-family: 'Bungee', cursive;
- font-size: 36px;
+  #logo {
+  font-family: 'Bungee', cursive;
+  font-size: 36px;
+  }
+
+  #angle-double-down {
+    color: red;
+    text-align: center;
+  }
+
+
+/*////////////////////////////////////////////*/
+/* Intermediate (and larger) View */
+/*////////////////////////////////////////////*/
+
+  @media only screen and (min-width: 768px) {
+
+nav {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 55px;
+  font-size: inherit;
 }
 
-#angle-double-down {
-  color: red;
-  text-align: center;
- }
+  }
