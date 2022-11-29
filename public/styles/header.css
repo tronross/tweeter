@@ -1,6 +1,12 @@
-/* Stylesheet for full header */
+/*////////////////////////////////////////////*/
+/* Header and Floating Profile Stylesheet */
+/*////////////////////////////////////////////*/
 
-section.profile {
+/*////////////////////////////////////////////*/
+/* Default View (mobile) */
+/*////////////////////////////////////////////*/
+
+section.profile { /* Hide Floating Profile; Display Header Profile */
   display: none;
 }
 
@@ -16,10 +22,13 @@ header.profile {
   color: white;
 }
 
+/*////////////////////////////////////////////*/
+/* Desktop View  */
+/*////////////////////////////////////////////*/
 
 @media only screen and (min-width:1260px) {
 
-  header.profile {
+  header.profile { /* Hide Header Profile; Display Floating Profile */
     display: none;
   }
 
@@ -30,7 +39,6 @@ header.profile {
     justify-content: center;
     align-items: center;
     align-self: flex-start;
-   
     font-size: 32px;
     width: 25%;
     height: 20%;
