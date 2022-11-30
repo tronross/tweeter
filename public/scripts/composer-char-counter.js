@@ -1,3 +1,7 @@
+/////////////////////////////////////////
+// Tweet Composition Character Counter
+/////////////////////////////////////////
+
 // Count and display remaining characters while composing tweet
 $(document).ready(function(event) {
   $( '#tweet-text' ).on('input', function(event) {
