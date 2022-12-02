@@ -1,18 +1,29 @@
-# Tweeter Project
+# Tweeter
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+The starter code for the project was forked and cloned from the [Lighthouse Labs](https://www.lighthouselabs.ca/) Tweeter [repository](https://github.com/lighthouse-labs/tweeter). It utilzes HTML, CSS, JS, jQuery and AJAX on the front-end, and Node and Express on the back-end.
+
+## Screenshots
+
+<img src="public\docs\desktop-screenshot.png" alt="Tweeter desktop screenshot" width=87%></img>
+<span>
+<img src="public\docs\tablet-screenshot.png" alt="Tweeter tablet screenshot" width=44%></img>
+</span>
+<span>
+<img src="public\docs\mobile-screenshot.png" alt="Tweeter mobile screenshot" width=42%></img>
+</span>
 
 ## Getting Started
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+1. Install dependencies using the `npm install` command.
+2. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+3. Go to <http://localhost:8080/> in your browser.
 
-## Dependencies
+## Local Dependencies
 
 - Express
 - Node 5.10.x or above
+- Chance
+- Body-Parser
+- md5
