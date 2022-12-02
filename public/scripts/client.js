@@ -4,7 +4,7 @@
 
 $(document).ready(() => {
 
-  // Submit new tweet
+  // submit new tweet
   $( '#submit-tweet' ).submit(function(event) {
     event.preventDefault();
     const $newTweet = $( this ).serialize();
@@ -21,7 +21,7 @@ $(document).ready(() => {
         $( '#error-dialog' ).removeClass( '.hidden' );
         $( 'button' ).click(() => {
           $( '#error-dialog' ).slideUp('fast', () => {
-            $( '#error-dialog' ).addClass( '.hidden' );
+            $( '#error-dialog' ).addClass('.hidden');
           });
         });
       });
