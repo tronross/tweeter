@@ -6,12 +6,12 @@ The starter code for the project was forked and cloned from the [Lighthouse Labs
 
 ## Screenshots
 
-<img src="public\docs\desktop-screenshot.png" alt="Tweeter desktop screenshot" width=87%></img>
+<img src="public\docs\desktop-screenshot.png" alt="Tweeter desktop screenshot" width=85%></img>
 <span>
 <img src="public\docs\tablet-screenshot.png" alt="Tweeter tablet screenshot" width=44%></img>
 </span>
 <span>
-<img src="public\docs\mobile-screenshot.png" alt="Tweeter mobile screenshot" width=42%></img>
+<img src="public\docs\mobile-screenshot.png" alt="Tweeter mobile screenshot" width=41%></img>
 </span>
 
 ## Getting Started
