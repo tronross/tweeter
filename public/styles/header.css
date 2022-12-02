@@ -67,7 +67,7 @@ section#user-avatar {
 /* Desktop View  */
 /*////////////////////////////////////////////*/
 
-@media only screen and (min-width:1260px) {
+@media only screen and (min-width:1024px) {
 
   header.profile { /* Hide Header Profile; Display Floating Profile */
     display: none;
