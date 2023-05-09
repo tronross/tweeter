@@ -1,17 +1,17 @@
 ////////////////////////////////
 // Tweet (and Feed) Rendering
 ////////////////////////////////
-    
+
 // Render Feed
-const renderTweets = function(tweets) {
+const renderTweets = function (tweets) {
   for (const tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-    $( '#tweets-container' ).prepend($tweet);
+    $('#tweets-container').prepend($tweet);
   }
 };
 
 // Render tweet HTML
-const createTweetElement = function(tweet) {
+const createTweetElement = function (tweet) {
   const escapedTweet = escapeText(tweet.content.text);
 
   const $tweet = `
@@ -34,13 +34,13 @@ const createTweetElement = function(tweet) {
                       </footer>
                     </article>
                   `;
-    
+
   return $tweet;
 };
 
 // GET and render tweets from in-memory database
-const loadTweets = function() {
-  $.get( 'http://localhost:8080/tweets', (tweets) => {
+const loadTweets = function () {
+  $.get('http://localhost:8080/tweets', (tweets) => {
     renderTweets(tweets);
   });
 };
